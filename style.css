@@ -1,0 +1,505 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration-line: none;
+    color: black;
+}
+.item7, .item8, .item9, .item10, .item11, .item12 {
+    text-transform: uppercase;
+}
+.nav a:hover {
+    font-weight: bold;
+}
+
+.item3, .item4, .item5, .item6 {
+    font-size: 12px;
+}
+
+.nav {
+    display: grid;
+    height: 150px;
+    width: 100vw;
+    grid-template-areas: 
+    "logo search search membership favorites locator cart"
+    "logo november uki new all-products opportunity accessory";
+    grid-template-columns: 2fr 3fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
+}
+
+
+.nav input {
+    width: 400px; 
+    height: 40px;     
+    border: none;
+    background: url(./media/icons/search16x16.svg) no-repeat;
+    background-size: 25px auto;
+    background-position: 95% 50%;
+    background-color: rgb(238, 237, 237);
+}
+
+.nav > .item1 {
+    grid-area: logo;
+    padding: 35px 20px;
+}
+.nav > .item2 {
+    grid-area: search;
+    padding-top: 20px;
+    border-bottom: 1px solid black;
+}
+.nav > .item3 {
+    grid-area: membership;
+    padding-top: 50px;
+    border-bottom: 1px solid black;
+    background: url(./media/icons/profile.svg) no-repeat;
+    background-size: 30px auto;
+    background-position: 50% 30%;
+}
+.nav > .item4 {
+    grid-area: favorites;
+    padding-top: 50px;
+    border-bottom: 1px solid black;
+    background: url(./media/icons/favs.png) no-repeat;
+    background-size: 30px auto;
+    background-position: 50% 30%;
+}   
+.nav > .item5 {
+    grid-area: locator;
+    padding-top: 50px;
+    border-bottom: 1px solid black;
+    background: url(./media/icons/locatornew.png) no-repeat;
+    background-size: 30px auto;
+    background-position: 50% 30%;
+}
+.nav > .item6 {
+    grid-area: cart;
+    padding-top: 50px;
+    border-bottom: 1px solid black;
+    background: url(./media/icons/cart.png) no-repeat;
+    background-size: 30px auto;
+    background-position: 50% 30%;
+}
+.nav > .item7 {
+    grid-area: november;
+    padding-top: 25px;    
+    transition: 1.5s;
+    transition-timing-function: ease;
+}
+
+.nav > .item7:hover {
+    font-size: 18px;
+}
+
+.nav > .item8 {
+    grid-area: uki;
+    padding-top: 25px;
+    transition: 1.5s;
+    transition-timing-function: ease;
+}
+.nav > .item8:hover {
+    font-size: 18px;
+}
+.nav > .item9 {
+    grid-area: new;
+    padding-top: 25px;
+    transition: 1.5s;
+    transition-timing-function: ease;
+}
+.nav > .item9:hover {
+    font-size: 18px;
+}
+.nav > .item10 {
+    grid-area: all-products;
+    padding-top: 25px;
+    transition: 1.5s;
+    transition-timing-function: ease;
+}
+.nav > .item10:hover {
+    font-size: 18px;
+}
+.nav > .item11 {
+    grid-area: opportunity;
+    padding-top: 25px;
+    transition: 1.5s;
+    transition-timing-function: ease;
+}
+.nav > .item11:hover {
+    font-size: 18px;
+}
+.nav > .item12 {
+    grid-area: accessory;
+    padding-top: 25px;
+    transition: 1.5s;
+    transition-timing-function: ease;
+}
+.nav > .item12:hover {
+    font-size: 18px;
+}
+.item1 img {
+    width: 100%;
+    height: auto;
+}
+
+.main {
+    display: grid;
+    height: 180vh;
+    width: 100vw;
+    grid-template-areas: 
+    "banner banner banner banner"
+    "item1 item2 item3 item4"
+    "p1 p2 p3 p4"
+    "p5 p6 p7 p8";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 450px 100px 520px 100px;
+    text-align: center;
+    row-gap: 40px;
+    column-gap: 20px;
+}
+
+.banner img {
+    height: 450px;
+    width: 100vw;
+}
+.main > .banner {
+    grid-area: banner;
+}
+
+.main > .item1 {
+    grid-area: item1;
+    border: 1px solid grey;
+    font-size: 18px;
+    padding-top: 40px;
+    background: url(./media/icons/delivery.svg) no-repeat;
+    background-size: 40px auto;
+    background-position: 50% 3%;
+}
+.main > .item2 {
+    grid-area: item2;
+    border: 1px solid grey;
+    font-size: 18px;
+    padding-top: 40px;
+    background: url(./media/icons/creditcard.png) no-repeat;
+    background-size: 40px auto;
+    background-position: 50% -5%;
+}
+.main > .item3 {
+    grid-area: item3;
+    border: 1px solid grey;
+    font-size: 18px;
+    padding-top: 40px;
+    background: url(./media/icons/secure.png) no-repeat;
+    background-size: 40px auto;
+    background-position: 50% -5%;
+}
+.main > .item4 {
+    grid-area: item4;
+    border: 1px solid grey;
+    font-size: 18px;
+    padding-top: 40px;
+    background: url(./media/icons/exchange.png) no-repeat;
+    background-size: 40px auto;
+    background-position: 50% -5%;
+}
+.main > .list1 {
+    grid-area: p1;
+    text-align: start;
+    padding-top: 150px;
+    padding-left: 50px;
+    font-size: 20px;
+}
+
+.list1 span {
+    color: rgb(87, 85, 85);
+}
+
+.list1 a {
+    text-decoration-line: none;
+    text-transform: lowercase;
+    color: black;
+    font-size: 15px;
+    border: 1px solid black;
+    padding: 5px 30px;
+    transition: 0.6s;
+    transition-timing-function: ease;
+    transition-delay: 0.05s;
+}
+.list1 a:hover {
+    background-color: black;
+    color: white;
+}
+
+.main > .list2 {
+    grid-area: p2;
+}
+
+.list2 {
+    background-image: url(./media/coat1.jpg);
+}
+
+.list2:hover {
+    background-image: url(./media/coat1-1.jpg);
+}
+
+.main > .list3 {
+    grid-area: p3;
+}
+
+.list3 {
+    background-image: url(./media/coat2.jpg);
+}
+
+.list3:hover {
+    background-image: url(./media/coat2-2.jpg);
+}
+
+.main > .list4 {
+    grid-area: p4;
+}
+
+.list4 {
+    background-image: url(./media/coat3.jpg);
+}
+
+.list4:hover {
+    background-image: url(./media/coat3-3.jpg);
+}
+
+.main > .list5 {
+    grid-area: p5;
+}
+.main > .list6 {
+    grid-area: p6;
+}
+.main > .list7 {
+    grid-area: p7;
+}
+.main > .list8 {
+    grid-area: p8;
+}
+
+.lastprice {
+    color: rgb(87, 85, 85);
+    text-decoration: line-through;
+}
+
+.actualprice {
+    font-weight: bold;
+}
+
+.categories {
+    width: 90vw;
+    margin-left: 250px;
+    display: grid;
+    grid-template-areas: 
+    "triko casual ceket"
+    "sonbahar kisin brownjacket"
+    "mont ofis elbise";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.categories > .category1 {
+    grid-area: triko;
+}
+.categories > .category2 {
+    grid-area: casual;
+}
+.categories > .category3 {
+    grid-area: ceket;
+}
+.categories > .category4 {
+    grid-area: sonbahar;
+}
+.categories > .category5 {
+    grid-area: kisin;
+}
+.categories > .category6 {
+    grid-area: brownjacket;
+}
+.categories > .category7 {
+    grid-area: mont;
+}
+.categories > .category8 {
+    grid-area: ofis;
+}
+.categories > .category9 {
+    grid-area: elbise;
+}
+
+.category1, .category2, .category3, .category4, .category5, .category6, .category7, .category8, .category9 {
+    transition: 0.4s;
+    transition-timing-function: ease-in;
+}
+
+.category1:hover {
+    color: rgb(223, 223, 223);
+    opacity: 0.3;
+}
+
+.category2:hover {
+    color: rgb(223, 223, 223);
+    opacity: 0.3;
+}
+.category3:hover {
+    color: rgb(223, 223, 223);
+    opacity: 0.3;
+}
+.category4:hover {
+    color: rgb(223, 223, 223);
+    opacity: 0.3;
+}
+.category5:hover {
+    color: rgb(223, 223, 223);
+    opacity: 0.3;
+}
+.category6:hover {
+    color: rgb(223, 223, 223);
+    opacity: 0.3;
+}
+.category7:hover {
+    color: rgb(223, 223, 223);
+    opacity: 0.3;
+}
+.category8:hover {
+    color: rgb(223, 223, 223);
+    opacity: 0.3;
+}
+.category9:hover {
+    color: rgb(223, 223, 223);
+    opacity: 0.3;
+}
+
+@media screen and (max-width: 890px){
+    .categories {
+        width: 45%;
+    }
+    
+}
+.subscription {
+    margin-top: 50px;    
+    font-size: 14px;
+    display: grid;
+    width: 100vw;
+    height: 130px;
+    grid-template-areas: 
+    "join subscribe";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    background-color: rgb(236, 236, 236);
+}
+
+footer .join-us {
+    grid-area: join;   
+    padding-top: 40px; 
+    padding-left: 300px;
+    padding-right: 100px;
+    line-height: 25px;
+}
+
+.subscription hr {
+    transform: rotate(90deg);
+    width: 80px;
+    color: rgb(54, 54, 54);
+    position: absolute;
+    margin-left: 700px;
+    margin-top: 65px;
+}
+
+footer .subscribe-form {
+    grid-area: subscribe;
+    padding-top: 20px; 
+    padding-left: 80px;
+    line-height: 45px;
+}
+
+footer input {  
+    width: 400px; 
+    height: 40px;  
+    border: 1px solid grey;
+    background: url(./media/icons/arrow.svg) no-repeat;
+    background-size: 25px auto;
+    background-position: 95% 50%;
+}
+
+footer .contacts {
+    display: grid;
+    width: 100vw;
+    height: 300px;
+    grid-template-areas: 
+    "corp help-info social";
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 40px;     
+    font-size: 14px;
+}
+footer .corporate{
+    grid-area: corp;    
+    padding-left: 300px;
+    line-height: 40px;
+}
+footer .help{
+    grid-area: help-info;
+    padding-left: 100px;
+    line-height: 40px;
+}
+footer .social{
+    grid-area: social;
+    text-align: center;
+    padding-right: 300px;
+}
+
+.social img {
+    height: 15px;
+    width: auto;
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-bottom: 20px;
+}
+
+.social hr {
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+.social .address {
+    margin-left: 10px;
+    background-image: url(./media/icons/locatornew.png);
+    background-repeat: no-repeat;
+    background-size: 25px auto;
+    background-position: left top;
+    padding-left: 10px;
+}
+.social .phone {
+    background-image: url(./media/icons/phone.svg);
+    background-repeat: no-repeat;
+    background-size: 15px auto;
+    background-position: 25% top;
+    padding-left: 10px;
+}
+.social .mail {
+    background-image: url(./media/icons/mail.svg);
+    background-repeat: no-repeat;
+    background-size: 20px auto;
+    background-position: 5% top;
+    padding-left: 10px;
+}
+
+
+
+footer .copyright {
+    width: 100vw;
+    height: 50px;
+    background-color: black;
+    color: white;
+    padding: 15px 0 0 150px;
+}
+footer .copy {
+    padding-left: 800px;
+    font-size: 12px;
+}
+
