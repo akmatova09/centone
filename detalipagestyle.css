@@ -111,8 +111,66 @@ hr {
     width: 300px;
     margin-left: 85px;
 }
+.basket:hover {
+    opacity: 0.8;
+}
 
 .code {
     color: grey;
     font-size: 12px;
+}
+
+/* Responsive starts here */
+
+@media screen and (max-width: 1200px) {
+    .details img {
+        height: 500px;
+        width: auto;
+    }
+    .basket {
+        width: 200px;
+        margin-left: 60px;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .details img {
+        height: 500px;
+        width: auto;
+    }
+    .details {
+        gap: 10px;
+    }
+    .basket {
+        width: 200px;
+        margin-left: 60px;
+    }
+    .sizes {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .basket {
+        width: 150px;
+        margin-left: 40px;
+        font-size: 14px;
+    }
+    .sizes {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .details {
+        display: flex;
+    }
+    .item1 img {
+        height: 500px;
+        width: auto;
+    }
+    .item2, .item4, .item5, .item6 {
+        display: none;
+    }
 }

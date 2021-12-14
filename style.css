@@ -2,215 +2,214 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
+body {
+    width: 100vw;
+    height: 100%;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+	max-width: 1650px;
+	padding: 0 50px;
+	margin: 0 auto;
+}
+
+.header__nav {
+    display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+    margin-top: 20px;
+}
+
+.navbar {
+    padding-left: 200px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #333;
+}
+
+.btn-outline-success {
+    margin-right: 200px;
+}
+
+.main-nav {
+	padding: 15px 0px;
+    margin-left: 350px;
+}
+
+.main-nav-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-nav__link {
+    text-transform: uppercase;
+	font-size: 14px;
+	line-height: 18px;
+	transition: 1.5s ease;
+    margin-right: 15px;
+}
+
+.main-nav__link:hover {
+	color: #000;
+    font-weight: bold;
+    font-size: 15px;
+	/* transform: scale(1.5);  */
+}
+
+.main {
+    flex: 1 1 auto;
+}
+
+/* .point1 {
+    background: url(./media/icons/profile.svg) no-repeat;    
+    background-size: 20px auto;
+    background-position: center 0px;
+}
+.point2 {
+    background: url(./media/icons/favs.png) no-repeat;    
+    background-size: 20px auto;
+    background-position: center 0px;
+}
+.point3 {
+    background: url(./media/icons/locatornew.png) no-repeat;    
+    background-size: 20px auto;
+    background-position: center 0px;
+}
+.point4 {
+    background: url(./media/icons/cart.png) no-repeat;    
+    background-size: 20px auto;
+    background-position: center 0px;
+} */
+/* .point1:hover {
+    opacity: 0.7;
+}
+.point2:hover {
+    opacity: 0.7;
+}
+.point3:hover {
+    opacity: 0.7;
+}
+.point4:hover {
+    opacity: 0.7;
+}  */
 
 a {
     text-decoration-line: none;
     color: black;
 }
-.item7, .item8, .item9, .item10, .item11, .item12 {
-    text-transform: uppercase;
-}
-.nav a:hover {
-    font-weight: bold;
+
+a:hover {
+    color: black;
 }
 
-.item3, .item4, .item5, .item6 {
-    font-size: 12px;
+.features {
+    display: flex;
+    flex-wrap: wrap;   
+    margin-top: 40px; 
+    text-align: center; 
+    gap: 5px;
+    letter-spacing: 1px;
+    font-size: 14px;
+    justify-content: center;
 }
-
-.nav {
-    display: grid;
-    height: 150px;
-    width: 100vw;
-    grid-template-areas: 
-    "logo search search membership favorites locator cart"
-    "logo november uki new all-products opportunity accessory";
-    grid-template-columns: 2fr 3fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    text-align: center;
-}
-
-
-.nav input {
-    width: 400px; 
-    height: 40px;     
-    border: none;
-    background: url(./media/icons/search16x16.svg) no-repeat;
-    background-size: 25px auto;
-    background-position: 95% 50%;
-    background-color: rgb(238, 237, 237);
-}
-
-.nav > .item1 {
-    grid-area: logo;
-    padding: 35px 20px;
-}
-.nav > .item2 {
-    grid-area: search;
-    padding-top: 20px;
-    border-bottom: 1px solid black;
-}
-.nav > .item3 {
-    grid-area: membership;
-    padding-top: 50px;
-    border-bottom: 1px solid black;
-    background: url(./media/icons/profile.svg) no-repeat;
-    background-size: 30px auto;
-    background-position: 50% 30%;
-}
-.nav > .item4 {
-    grid-area: favorites;
-    padding-top: 50px;
-    border-bottom: 1px solid black;
-    background: url(./media/icons/favs.png) no-repeat;
-    background-size: 30px auto;
-    background-position: 50% 30%;
-}   
-.nav > .item5 {
-    grid-area: locator;
-    padding-top: 50px;
-    border-bottom: 1px solid black;
-    background: url(./media/icons/locatornew.png) no-repeat;
-    background-size: 30px auto;
-    background-position: 50% 30%;
-}
-.nav > .item6 {
-    grid-area: cart;
-    padding-top: 50px;
-    border-bottom: 1px solid black;
-    background: url(./media/icons/cart.png) no-repeat;
-    background-size: 30px auto;
-    background-position: 50% 30%;
-}
-.nav > .item7 {
-    grid-area: november;
-    padding-top: 25px;    
-    transition: 1.5s;
-    transition-timing-function: ease;
-}
-
-.nav > .item7:hover {
-    font-size: 18px;
-}
-
-.nav > .item8 {
-    grid-area: uki;
-    padding-top: 25px;
-    transition: 1.5s;
-    transition-timing-function: ease;
-}
-.nav > .item8:hover {
-    font-size: 18px;
-}
-.nav > .item9 {
-    grid-area: new;
-    padding-top: 25px;
-    transition: 1.5s;
-    transition-timing-function: ease;
-}
-.nav > .item9:hover {
-    font-size: 18px;
-}
-.nav > .item10 {
-    grid-area: all-products;
-    padding-top: 25px;
-    transition: 1.5s;
-    transition-timing-function: ease;
-}
-.nav > .item10:hover {
-    font-size: 18px;
-}
-.nav > .item11 {
-    grid-area: opportunity;
-    padding-top: 25px;
-    transition: 1.5s;
-    transition-timing-function: ease;
-}
-.nav > .item11:hover {
-    font-size: 18px;
-}
-.nav > .item12 {
-    grid-area: accessory;
-    padding-top: 25px;
-    transition: 1.5s;
-    transition-timing-function: ease;
-}
-.nav > .item12:hover {
-    font-size: 18px;
-}
-.item1 img {
-    width: 100%;
+.features__item1 {
+    width: 320px;
     height: auto;
+    padding-top: 30px;
+    padding-right: 10px;   
+    border: 1px solid grey;   
+    background: url(./media/icons-delivery.png) no-repeat;
+    background-size: 30px auto;
+    background-position: 50% 3%;
+    text-align: center;
+}
+.features__item2 {
+    width: 320px;
+    height: auto;
+    padding-top: 30px;
+    padding-right: 10px;   
+    border: 1px solid grey;   
+    background: url(./media/icons-credit-card.png) no-repeat;
+    background-size: 30px auto;
+    background-position: 50% 3%;
+    text-align: center;
+}
+.features__item3 {
+    width: 320px;
+    height: auto;
+    padding-top: 30px;
+    padding-right: 10px;   
+    border: 1px solid grey;   
+    background: url(./media/icons-credit-card\(1\).png) no-repeat;
+    background-size: 30px auto;
+    background-position: 50% 3%;
+    text-align: center;
+}
+.features__item4 {
+    width: 320px;
+    height: auto;
+    padding-top: 30px;
+    padding-right: 10px;   
+    border: 1px solid grey;   
+    background: url(./media/icons-back.png) no-repeat;
+    background-size: 30px auto;
+    background-position: 50% 3%;
+    text-align: center;
 }
 
-.main {
+.campaign {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 400px;
     display: grid;
-    height: 180vh;
-    width: 100vw;
     grid-template-areas: 
-    "banner banner banner banner"
-    "item1 item2 item3 item4"
-    "p1 p2 p3 p4"
-    "p5 p6 p7 p8";
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 450px 100px 520px 100px;
-    text-align: center;
-    row-gap: 40px;
+    "AUTUMN coat1 coat2 coat3"
+    "AUTUMN Safari Baby Suede";
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     column-gap: 20px;
 }
 
-.banner img {
-    height: 450px;
-    width: 100vw;
+.campaign > .list1 {
+    grid-area: AUTUMN;
+    margin-top: 150px;
 }
-.main > .banner {
-    grid-area: banner;
+.campaign > .list2 {
+    grid-area: coat1;
+}
+.campaign > .list3 {
+    grid-area: coat2;
+}
+.campaign > .list4 {
+    grid-area: coat3;
+}
+.campaign > .list5 {
+    grid-area: Safari;
+    text-align: center;
+}
+.campaign > .list6 {
+    grid-area: Baby;
+    text-align: center;
+}
+.campaign > .list7 {
+    grid-area: Suede;
+    text-align: center;
 }
 
-.main > .item1 {
-    grid-area: item1;
-    border: 1px solid grey;
-    font-size: 18px;
-    padding-top: 40px;
-    background: url(./media/icons/delivery.svg) no-repeat;
-    background-size: 40px auto;
-    background-position: 50% 3%;
-}
-.main > .item2 {
-    grid-area: item2;
-    border: 1px solid grey;
-    font-size: 18px;
-    padding-top: 40px;
-    background: url(./media/icons/creditcard.png) no-repeat;
-    background-size: 40px auto;
-    background-position: 50% -5%;
-}
-.main > .item3 {
-    grid-area: item3;
-    border: 1px solid grey;
-    font-size: 18px;
-    padding-top: 40px;
-    background: url(./media/icons/secure.png) no-repeat;
-    background-size: 40px auto;
-    background-position: 50% -5%;
-}
-.main > .item4 {
-    grid-area: item4;
-    border: 1px solid grey;
-    font-size: 18px;
-    padding-top: 40px;
-    background: url(./media/icons/exchange.png) no-repeat;
-    background-size: 40px auto;
-    background-position: 50% -5%;
-}
-.main > .list1 {
-    grid-area: p1;
-    text-align: start;
-    padding-top: 150px;
-    padding-left: 50px;
-    font-size: 20px;
+.campaign__list img{
+    height: 500px;
+    width: auto;
 }
 
 .list1 span {
@@ -233,55 +232,6 @@ a {
     color: white;
 }
 
-.main > .list2 {
-    grid-area: p2;
-}
-
-.list2 {
-    background-image: url(./media/coat1.jpg);
-}
-
-.list2:hover {
-    background-image: url(./media/coat1-1.jpg);
-}
-
-.main > .list3 {
-    grid-area: p3;
-}
-
-.list3 {
-    background-image: url(./media/coat2.jpg);
-}
-
-.list3:hover {
-    background-image: url(./media/coat2-2.jpg);
-}
-
-.main > .list4 {
-    grid-area: p4;
-}
-
-.list4 {
-    background-image: url(./media/coat3.jpg);
-}
-
-.list4:hover {
-    background-image: url(./media/coat3-3.jpg);
-}
-
-.main > .list5 {
-    grid-area: p5;
-}
-.main > .list6 {
-    grid-area: p6;
-}
-.main > .list7 {
-    grid-area: p7;
-}
-.main > .list8 {
-    grid-area: p8;
-}
-
 .lastprice {
     color: rgb(87, 85, 85);
     text-decoration: line-through;
@@ -291,131 +241,86 @@ a {
     font-weight: bold;
 }
 
-.categories {
+.categories_wrapper {
     width: 90vw;
-    margin-left: 250px;
-    display: grid;
-    grid-template-areas: 
-    "triko casual ceket"
-    "sonbahar kisin brownjacket"
-    "mont ofis elbise";
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-gap: 10px;
+    margin: 0px auto;
 }
 
-.categories > .category1 {
-    grid-area: triko;
-}
-.categories > .category2 {
-    grid-area: casual;
-}
-.categories > .category3 {
-    grid-area: ceket;
-}
-.categories > .category4 {
-    grid-area: sonbahar;
-}
-.categories > .category5 {
-    grid-area: kisin;
-}
-.categories > .category6 {
-    grid-area: brownjacket;
-}
-.categories > .category7 {
-    grid-area: mont;
-}
-.categories > .category8 {
-    grid-area: ofis;
-}
-.categories > .category9 {
-    grid-area: elbise;
+.categories {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 15px;
+    padding-top: 150px;
 }
 
-.category1, .category2, .category3, .category4, .category5, .category6, .category7, .category8, .category9 {
+.categories__category1, .categories__category2, .categories__category3, .categories__category4, .categories__category5, .categories__category6, .categories__category7, .categories__category8, .categories__category9  {
     transition: 0.4s;
     transition-timing-function: ease-in;
 }
 
-.category1:hover {
+.categories__category1:hover {
     color: rgb(223, 223, 223);
     opacity: 0.3;
 }
 
-.category2:hover {
+.categories__category2:hover {
     color: rgb(223, 223, 223);
     opacity: 0.3;
 }
-.category3:hover {
+.categories__category3:hover {
     color: rgb(223, 223, 223);
     opacity: 0.3;
 }
-.category4:hover {
+.categories__category4:hover {
     color: rgb(223, 223, 223);
     opacity: 0.3;
 }
-.category5:hover {
+.categories__category5:hover {
     color: rgb(223, 223, 223);
     opacity: 0.3;
 }
-.category6:hover {
+.categories__category6:hover {
     color: rgb(223, 223, 223);
     opacity: 0.3;
 }
-.category7:hover {
+.categories__category7:hover {
     color: rgb(223, 223, 223);
     opacity: 0.3;
 }
-.category8:hover {
+.categories__category8:hover {
     color: rgb(223, 223, 223);
     opacity: 0.3;
 }
-.category9:hover {
+.categories__category9:hover {
     color: rgb(223, 223, 223);
     opacity: 0.3;
 }
 
-@media screen and (max-width: 890px){
-    .categories {
-        width: 45%;
-    }
-    
-}
-.subscription {
-    margin-top: 50px;    
-    font-size: 14px;
-    display: grid;
+.footer__subscription {
     width: 100vw;
-    height: 130px;
-    grid-template-areas: 
-    "join subscribe";
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
+    height: auto;
     background-color: rgb(236, 236, 236);
 }
+.footer__wrapper {
+    width: 60%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;    
+    font-size: 14px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 
-footer .join-us {
-    grid-area: join;   
-    padding-top: 40px; 
-    padding-left: 300px;
+.footer__join-us {
     padding-right: 100px;
     line-height: 25px;
 }
 
-.subscription hr {
-    transform: rotate(90deg);
-    width: 80px;
-    color: rgb(54, 54, 54);
-    position: absolute;
-    margin-left: 700px;
-    margin-top: 65px;
-}
-
-footer .subscribe-form {
-    grid-area: subscribe;
-    padding-top: 20px; 
-    padding-left: 80px;
-    line-height: 45px;
+.footer__subscribe-form {
+    line-height: 35px;
 }
 
 footer input {  
@@ -427,79 +332,86 @@ footer input {
     background-position: 95% 50%;
 }
 
-footer .contacts {
-    display: grid;
-    width: 100vw;
-    height: 300px;
-    grid-template-areas: 
-    "corp help-info social";
-    grid-template-columns: 1fr 1fr 1fr;
-    padding-top: 40px;     
+.footer__contacts {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    margin: 0px auto;
+    justify-content: space-between;
+    padding-top: 40px; 
+    padding-bottom: 40px;    
     font-size: 14px;
-}
-footer .corporate{
-    grid-area: corp;    
-    padding-left: 300px;
     line-height: 40px;
 }
-footer .help{
-    grid-area: help-info;
-    padding-left: 100px;
-    line-height: 40px;
-}
-footer .social{
-    grid-area: social;
+.footer__social{
     text-align: center;
-    padding-right: 300px;
 }
 
-.social img {
+.footer__social img {
     height: 15px;
-    width: auto;
-    margin-top: 20px;
-    margin-left: 5px;
-    margin-bottom: 20px;
 }
 
-.social hr {
-    width: 250px;
-    margin-bottom: 20px;
-}
-
-.social .address {
-    margin-left: 10px;
-    background-image: url(./media/icons/locatornew.png);
+.footer__address {
+    background-image: url(./media/location.png.png);
     background-repeat: no-repeat;
     background-size: 25px auto;
-    background-position: left top;
-    padding-left: 10px;
+    background-position: left 10px;
+    padding-left: 25px;
 }
-.social .phone {
-    background-image: url(./media/icons/phone.svg);
+.footer__phone {
+    background-image: url(./media/icons-phone.png);
     background-repeat: no-repeat;
     background-size: 15px auto;
-    background-position: 25% top;
-    padding-left: 10px;
+    background-position: 25%;
 }
-.social .mail {
-    background-image: url(./media/icons/mail.svg);
+.footer__mail {
+    background-image: url(./media/icons-mail.png);
     background-repeat: no-repeat;
     background-size: 20px auto;
-    background-position: 5% top;
-    padding-left: 10px;
+    background-position: left;
 }
 
-
-
-footer .copyright {
+.footer__copyright {
     width: 100vw;
-    height: 50px;
     background-color: black;
     color: white;
-    padding: 15px 0 0 150px;
-}
-footer .copy {
-    padding-left: 800px;
     font-size: 12px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
+
+/* Responsive starts here */
+
+@media screen and (max-width: 1200px) {
+    .campaign {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .footer__join-us {
+        display: none;
+    }
+    .carousel {
+        display: none;
+    }
+    .features {
+        font-size: 18px;
+    }
+    .features__item1, .features__item2, .features__item3, .features__item4 {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .main-nav__list {
+        display: none;
+    }
+    .navbar {
+        border-bottom: none;
+    }
+}
+
+
 
